@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #8cc1e9;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+/* Style the side navigation */
+nav {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  display: inline-block;
+
+}
+
+main {
+  position: relative;
+  display: inline-block;
+  margin-left: 400px;
+  padding: 50px;
+}
+
+#logoCaverne {
+  width: 300px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+#logoNoir {
+  width: 50px;
+  height: auto;
+}
+
+#linkedinLogo {
+  width: 20px;
+  height: auto;
+}
+
+.CV_img {
+  position: relative;
+}
+
+.CV_img img{
+  width: 35%;
+  height: auto;
+  margin: 50px;
+  box-shadow: 0px 0px 10px #3a3a3a1f;
+}
+
+.CV_img img:hover {
+  filter: brightness(80%);
+}
+
+#CVs {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Side navigation links */
+nav ul a {
+  color: #3a3a3a;
+  padding: 25px;
+  text-decoration: none;
+  display: block;
+  background-color: #d4e8f7;
+  text-align: center;
+}
+
+/* Change color on hover */
+nav a:hover {
+  background-color: #aad1ef;
+  color: black;
+}
+
+footer{
+  width: 400px;
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 10px;
+}

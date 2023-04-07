@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #d4e8f7;
+  color: #3a3a3a;
   display: inline;
 }
 
@@ -70,6 +71,10 @@ main {
 #portfolio li {
   display: inline-block;
   vertical-align: middle;
+}
+
+.software {
+  color: #d4aa00;
 }
 
 .projet {

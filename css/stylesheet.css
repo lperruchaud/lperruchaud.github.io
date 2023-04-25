@@ -4,6 +4,7 @@
             --card_medium: 35;
             --card_large: 50;
             --card_cv: 80;
+            --card_cv_res: 48;
 }
 
 /* général*/
@@ -185,27 +186,6 @@ main {
 
 /*fin accueil*/
 /* CV */
-@media screen and (min-width: 1000px) {
-.cv_container {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 550px);
-  grid-auto-rows: 10px;
-  justify-content: center;
-  text-align: center;
-}
-
-.card_cv {
-  width: 100%;
-  height: auto;
-  grid-row-end: span var(--card_cv);
-  padding: 20px;
-}
-}
 
 @media screen and (max-width: 1000px) {
 .cv_container {
@@ -224,7 +204,29 @@ main {
 .card_cv {
   width: 100%;
   height: auto;
-  grid-row-end: span var(60);
+  padding: 20px;
+  grid-row-end: span var(--card_cv_res);
+}
+}
+
+@media screen and (min-width: 1000px) {
+.cv_container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 550px);
+  grid-auto-rows: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.card_cv {
+  width: 100%;
+  height: auto;
+  grid-row-end: span var(--card_cv);
   padding: 20px;
 }
 }

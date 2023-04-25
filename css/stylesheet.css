@@ -198,6 +198,13 @@ main {
   justify-content: center;
   text-align: center;
 }
+
+.card_cv {
+  width: 100%;
+  height: auto;
+  grid-row-end: span var(--card_cv);
+  padding: 20px;
+}
 }
 
 @media screen and (max-width: 1000px) {
@@ -213,13 +220,13 @@ main {
   justify-content: center;
   text-align: center;
 }
-}
 
 .card_cv {
   width: 100%;
   height: auto;
-  grid-row-end: span var(--card_cv);
+  grid-row-end: span var(60);
   padding: 20px;
+}
 }
 
 .card_cv a:hover {

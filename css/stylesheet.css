@@ -49,6 +49,39 @@ nav {
 
 }
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* lien nav */
+nav ul a {
+  color: #3a3a3a;
+  padding: 25px;
+  text-decoration: none;
+  display: block;
+  background-color: #8cc1e9;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #aad1ef;
+  color: black;
+}
+
+footer{
+  width: 400px;
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 10px;
+}
+
+/*fin nav sur le coté*/
+
 main {
   position: relative;
   display: inline-block;
@@ -185,40 +218,10 @@ main {
   box-shadow: 0px 0px 10px #3a3a3a1f;
 }
 
+/*fin cv*/
+
 #Charte_img {
   text-align: center;
   width: 80%;
   height: auto;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Side navigation links */
-nav ul a {
-  color: #3a3a3a;
-  padding: 25px;
-  text-decoration: none;
-  display: block;
-  background-color: #8cc1e9;
-  text-align: center;
-}
-
-/* Change color on hover */
-nav a:hover {
-  background-color: #aad1ef;
-  color: black;
-}
-
-footer{
-  width: 400px;
-  position: fixed;
-  bottom: 10px;
-  text-align: center;
-  text-decoration: none;
-  color: #3a3a3a;
-  font-size: 10px;
 }

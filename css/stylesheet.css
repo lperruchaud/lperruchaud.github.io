@@ -1,3 +1,10 @@
+:root {
+            --card_legende: 10;
+            --card_small: 30;
+            --card_medium: 35;
+            --card_large: 50;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +41,7 @@ nav {
   background-color: #ffffff;
   overflow-x: hidden;
   display: inline-block;
+  box-shadow: 0px 0px 10px #3a3a3a1f;
 
 }
 
@@ -63,39 +71,72 @@ main {
   height: auto;
 }
 
-#portfolio ul{
-    list-style-type: none;
-    position: relative;
-}
-
-#portfolio li {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .software {
   color: #d4aa00;
 }
 
-.projet {
-  display: block;
-  width: 25%;
-  height: auto;
-  margin: 25px;
-  padding: 25px;
-  box-shadow: 0px 0px 10px #3a3a3a1f;
-  background-color: #ffffff;
-}
+.pin_container {
+            margin: 0;
+            margin-top: 20px;
+            padding: 50px;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 300px);
+            grid-auto-rows: 10px;
+            justify-content: center;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px #3a3a3a1f;
 
-.projet img{
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
+        }
 
-.projet a:hover{
-  filter: brightness(80%);
-}
+        .card {
+            padding: 15px;
+            margin: 20px 15px;
+            border-radius: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px #3a3a3a1f;
+        }
+
+        .card a:hover {
+          filter: brightness(80%);
+        }
+
+        .card_legende {
+            grid-row-end: span var(--card_legende);
+        }
+
+        .card_small {
+            grid-row-end: span var(--card_small);
+        }
+
+        .card_medium {
+            grid-row-end: span var(--card_medium);
+        }
+
+        .card_large {
+            grid-row-end: span var(--card_large);
+        }
+
+        .card_logo {
+          background-color: #d4e8f7;
+        }
+
+        .card_depliant {
+          background-color: #aad1ef;
+        }
+
+        .card_idv {
+          background-color: #8cc1e9;
+        }
+
+        .card img{
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
 
 .CV_img {
   position: relative;

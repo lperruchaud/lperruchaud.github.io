@@ -165,7 +165,6 @@ main {
   grid-row-end: span var(--card_large);
 }
 
-
 .card_xlarge {
   grid-row-end: span var(--card_xlarge);
 }
@@ -188,6 +187,11 @@ main {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+}
+
+.card_xlarge img{
+  height: 525px;
+  width: auto;
 }
 
 /*fin accueil*/
